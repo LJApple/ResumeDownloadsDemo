@@ -15,6 +15,7 @@
 		57CE2ADE1C634346007569D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CE2ADC1C634346007569D2 /* LaunchScreen.storyboard */; };
 		57CE2AE91C634346007569D2 /* resumeDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE2AE81C634346007569D2 /* resumeDownloadTests.m */; };
 		57CE2AF41C634346007569D2 /* resumeDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE2AF31C634346007569D2 /* resumeDownloadUITests.m */; };
+		57CE2B041C6359DE007569D2 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE2B031C6359DE007569D2 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		57CE2ACB1C634346007569D2 /* resumeDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resumeDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CE2ACF1C634346007569D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		57CE2AD11C634346007569D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57CE2AD11C634346007569D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		57CE2AD21C634346007569D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		57CE2AD41C634346007569D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		57CE2AD51C634346007569D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		57CE2AEF1C634346007569D2 /* resumeDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = resumeDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CE2AF31C634346007569D2 /* resumeDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = resumeDownloadUITests.m; sourceTree = "<group>"; };
 		57CE2AF51C634346007569D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CE2B021C6359DE007569D2 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		57CE2B031C6359DE007569D2 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +104,7 @@
 		57CE2ACD1C634346007569D2 /* resumeDownload */ = {
 			isa = PBXGroup;
 			children = (
-				57CE2AD11C634346007569D2 /* AppDelegate.h */,
+				57CE2B011C6359DE007569D2 /* MD5 */,
 				57CE2AD21C634346007569D2 /* AppDelegate.m */,
 				57CE2AD41C634346007569D2 /* ViewController.h */,
 				57CE2AD51C634346007569D2 /* ViewController.m */,
@@ -138,6 +141,16 @@
 				57CE2AF51C634346007569D2 /* Info.plist */,
 			);
 			path = resumeDownloadUITests;
+			sourceTree = "<group>";
+		};
+		57CE2B011C6359DE007569D2 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				57CE2AD11C634346007569D2 /* AppDelegate.h */,
+				57CE2B021C6359DE007569D2 /* NSString+Hash.h */,
+				57CE2B031C6359DE007569D2 /* NSString+Hash.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CE2AD61C634346007569D2 /* ViewController.m in Sources */,
+				57CE2B041C6359DE007569D2 /* NSString+Hash.m in Sources */,
 				57CE2AD31C634346007569D2 /* AppDelegate.m in Sources */,
 				57CE2AD01C634346007569D2 /* main.m in Sources */,
 			);
@@ -499,6 +513,7 @@
 				57CE2AFA1C634346007569D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57CE2AFB1C634346007569D2 /* Build configuration list for PBXNativeTarget "resumeDownloadTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +522,7 @@
 				57CE2AFD1C634346007569D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57CE2AFE1C634346007569D2 /* Build configuration list for PBXNativeTarget "resumeDownloadUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +531,7 @@
 				57CE2B001C634346007569D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
