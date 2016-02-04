@@ -8,20 +8,26 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController () <NSURLSessionDataDelegate>
+/** 进度条*/
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+/** session对象*/
+@property (nonatomic, strong) NSURLSession *session;
+/** data任务*/
+@property (nonatomic, strong) NSURLSessionDataTask *dataTask;
+/** 文件流*/
+@property (nonatomic, strong) NSOutputStream *stream;
+/** 文件的总长度*/
+@property (nonatomic, assign) NSInteger totalLength;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)start:(id)sender {
 }
-
+- (IBAction)pause:(id)sender {
+}
 @end

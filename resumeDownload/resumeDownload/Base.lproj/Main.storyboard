@@ -23,6 +23,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="89" y="136" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2F1-gx-qG1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inz-Vn-olN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -30,6 +33,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="89" y="220" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgT-Ey-jWf"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-Au-CPB">
                                 <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
@@ -54,6 +60,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="ctW-Au-CPB" id="M1e-8x-g9o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
